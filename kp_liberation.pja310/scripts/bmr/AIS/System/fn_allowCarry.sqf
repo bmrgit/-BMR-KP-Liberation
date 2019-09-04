@@ -18,7 +18,8 @@ _Drag = !(isNull (_target getVariable ['ais_DragDrop_Player', objNull]));
 _Draging = !(isNull (player getVariable ['ais_DragDrop_Torso', objNull]));
 
 
-
+_return = false;
+/*
 _return = if (
 
 	_isUnc &&
@@ -28,7 +29,7 @@ _return = if (
 	{_Draging}
 	
 ) then {true} else {false};
-
+*/
 
 
 
