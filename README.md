@@ -9,13 +9,13 @@ This is used to make it easier to make change ind the mission =BMR= uses for the
 
 CHANGE LOG v 1.01
 
--Added TFAR
--Added Landing Craft LCVP Mk5
--Added Boeing/SOAR MH-47E Chinook
--Added KP Fill Crates
--Added Immersion Mod
--Added Drag Body script
--Added GOM Aircraft Loadout
--Removed Mobile Arsenal
--Increased AI Difficulty
--Increased Max number of AI
+-Added TFAR  
+-Added Landing Craft LCVP Mk5  
+-Added Boeing/SOAR MH-47E Chinook  
+-Added KP Fill Crates  
+-Added Immersion Mod  
+-Added Drag Body script  
+-Added GOM Aircraft Loadout  
+-Removed Mobile Arsenal  
+-Increased AI Difficulty  
+-Increased Max number of AI  
