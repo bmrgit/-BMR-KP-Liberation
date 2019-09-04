@@ -49,7 +49,7 @@ class CfgFunctions {
     // If you already have this class opened in your description.ext, copy and paste just this include inside of it.
     #include "KPCF\KPCF_functions.hpp"
 	#include "scripts\bmr\GOM\functions\GOM_fnc_functions.hpp"
-	#include "AIS\cfgFunctions.hpp"
+	#include "scripts\bmr\AIS\cfgFunctions.hpp"
 };
 
 class CfgCommunicationMenu
@@ -61,4 +61,4 @@ class CfgCommunicationMenu
 
 #include "scripts\bmr\GOM\dialogs\GOM_dialog_parents.hpp"
 #include "scripts\bmr\GOM\dialogs\GOM_dialog_controls.hpp"
-#include "AIS\Effects\BarDlg.hpp"
+#include "scripts\bmr\AIS\Effects\BarDlg.hpp"
