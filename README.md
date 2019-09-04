@@ -5,7 +5,7 @@
 This Github page is not to take credit for the original mission made by  Killah Potatoes.
 This is used to make it easier to make change ind the mission =BMR= uses for ther own server
 
-
+The changelog shows both change's from the mission and serversided change's
 
 CHANGE LOG v 1.01
 
