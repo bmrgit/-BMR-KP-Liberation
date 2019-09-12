@@ -3948,6 +3948,19 @@
             <Portuguese>Bandeira da Killah Potatoes</Portuguese>
             <Korean>Killah Potatoes 깃발</Korean>
         </Key>
+        <Key ID="STR_INDIV_FLAG1">
+            <Original>Danish Flag</Original>
+            <German>Danish Flag</German>
+            <Spanish>Danish Flag</Spanish>
+            <Russian>Danish Flag</Russian>
+            <Italian>Danish Flag</Italian>
+            <Chinesesimp>Danish Flag</Chinesesimp>
+            <Chinese>Danish Flag</Chinese>
+            <Turkish>Danish Flag</Turkish>
+            <Portuguese>Danish Flag</Portuguese>
+            <Korean>Danish Flag</Korean>
+        </Key>
+
         <Key ID="STR_SMALL_STORAGE">
             <Original>Small storage area</Original>
             <German>Kleiner Lagerbereich</German>
