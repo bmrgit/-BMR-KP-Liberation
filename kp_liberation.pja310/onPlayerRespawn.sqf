@@ -14,10 +14,3 @@ if ( isNil "GRLIB_respawn_loadout" ) then {
 	sleep 4;
 	[ player, GRLIB_respawn_loadout ] call F_setLoadout;
 };
-	player enableFatigue false;
-	player enablestamina false;
-	player setCustomAimCoef 0.3; 
-	player setUnitRecoilCoefficient 0.30;
-	player setUnitTrait ["camouflageCoef",0.8];
-	player setUnitTrait ["audibleCoef",0.8];
-	player setUnitTrait ['loadCoef',0.2];

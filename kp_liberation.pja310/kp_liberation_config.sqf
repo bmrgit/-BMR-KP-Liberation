@@ -177,11 +177,11 @@ GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
 GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
-GRLIB_halo_altitude = 1000;                                             // Altitude in metres for the HALO jump.
+GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 10;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
+KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
 GRLIB_capture_size = 175;                                               // Range to capture a sector.
@@ -611,14 +611,19 @@ box_transport_config = [
     ["rhsusf_M1083A1P2_D_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
     ["rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
     ["rhsusf_M1083A1P2_WD_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
-    ["rhsusf_M977A4_BKIT_M2_usarmy_d", -6.5, [0,0.4,0.7], [0,-1.3,0.7], [0,-3,0.7]],
-    ["rhsusf_M977A4_BKIT_M2_usarmy_wd", -6.5, [0,0.4,0.7], [0,-1.3,0.7], [0,-3,0.7]],
-    ["rhsusf_M977A4_BKIT_usarmy_d", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
-    ["rhsusf_M977A4_BKIT_usarmy_wd", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
-    ["rhsusf_M977A4_usarmy_d", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
-    ["rhsusf_M977A4_usarmy_wd", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
+    ["rhsusf_M977A4_BKIT_M2_usarmy_d", -6.5, [0,0.4,0.1], [0,-1.3,0.1], [0,-3,0.1]],
+    ["rhsusf_M977A4_BKIT_M2_usarmy_wd", -6.5, [0,0.4,0.1], [0,-1.3,0.1], [0,-3,0.1]],
+    ["rhsusf_M977A4_BKIT_usarmy_d", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
+    ["rhsusf_M977A4_BKIT_usarmy_wd", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
+    ["rhsusf_M977A4_usarmy_d", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
+    ["rhsusf_M977A4_usarmy_wd", -6.5, [0,0.4,0.8], [0,-1.3,0.8], [0,-3,0.8]],
     ["rhsusf_m998_d_2dr_halftop", -4.5, [0,-0.9,-0.2]],
     ["rhsusf_m998_w_2dr_halftop", -4.5, [0,-0.9,-0.2]],
+    ["rhsusf_M1239_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
+    ["rhsusf_M1239_M2_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
+    ["rhsusf_M1239_MK19_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
+    ["sfp_tgb30", -5, [0.2,-0.1,2], [0.2,-2.1,2]],
+    ["sfp_tgb40", -5, [0.1,-0.7,2], [0.1,-2.7,2]],
     ["UK3CB_BAF_Merlin_HC3_18_DPMT", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
     ["UK3CB_BAF_Merlin_HC3_32_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
     ["UK3CB_BAF_Merlin_HC3_CSAR_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
@@ -663,12 +668,15 @@ ai_resupply_sources = [
     "O_Truck_03_ammo_F",
     "rhs_gaz66_ammo_msv",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+    "rhsusf_M1239_MK19_Deploy_socom_d",
+    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
     "rhsusf_M977A4_AMMO_usarmy_d",
     "rhsusf_M977A4_AMMO_usarmy_wd",
+    "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo",
     "uns_motorpool1_repair"
@@ -699,12 +707,15 @@ vehicle_repair_sources = [
     "O_Truck_03_repair_F",
     "RHS_Ural_Repair_VDV_01",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+    "rhsusf_M1239_MK19_Deploy_socom_d",
+    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
     "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
     "rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
     "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
     "rhsusf_M977A4_REPAIR_usarmy_d",
     "rhsusf_M977A4_REPAIR_usarmy_wd",
+    "sfp_tgb30_repair",
     "UNS_Hanger_repair",
     "uns_M113_ENG",
     "uns_M35A2_repair",
@@ -738,12 +749,15 @@ vehicle_rearm_sources = [
     "O_Truck_03_ammo_F",
     "rhs_gaz66_ammo_msv",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+    "rhsusf_M1239_MK19_Deploy_socom_d",
+    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_d",
     "rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
     "rhsusf_M977A4_AMMO_usarmy_d",
     "rhsusf_M977A4_AMMO_usarmy_wd",
+    "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo"
 ];
@@ -777,10 +791,13 @@ vehicle_refuel_sources = [
     "O_Truck_03_fuel_F",
     "RHS_Ural_Fuel_VDV_01",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
+    "rhsusf_M1239_MK19_Deploy_socom_d",
+    "rhsusf_M1239_M2_Deploy_socom_d",
     "rhsusf_M978A4_BKIT_usarmy_d",
     "rhsusf_M978A4_BKIT_usarmy_wd",
     "rhsusf_M978A4_usarmy_d",
     "rhsusf_M978A4_usarmy_wd",
+    "sfp_tgb40_fuel",
     "uns_M113_ENG",
     "uns_M35A2_fuel",
     "uns_M35A2_fueltanker"

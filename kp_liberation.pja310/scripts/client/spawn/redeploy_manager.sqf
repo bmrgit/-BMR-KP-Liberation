@@ -10,6 +10,7 @@ GRLIB_force_redeploy = false;
 waitUntil {!isNil "GRLIB_all_fobs"};
 waitUntil {!isNil "blufor_sectors"};
 waitUntil {!isNil "save_is_loaded"};
+waitUntil {save_is_loaded};
 
 private _spawn_str = "";
 
@@ -38,16 +39,7 @@ while {true} do {
 
 	if (!GRLIB_fatigue) then {
 		player enableStamina false;
-		player enableFatigue false;
-		player enablestamina false;
-		player setCustomAimCoef 0.3; 
-		player setUnitRecoilCoefficient 0.30;
-		player setUnitTrait ["camouflageCoef",0.8];
-		player setUnitTrait ["audibleCoef",0.8];
-		player setUnitTrait ['loadCoef',0.2];
 	};
-	
-	
 
 	createDialog "liberation_deploy";
 	deploy = 0;

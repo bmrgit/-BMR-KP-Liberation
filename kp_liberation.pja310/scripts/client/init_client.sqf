@@ -80,5 +80,7 @@ execVM "scripts\client\ui\intro.sqf";
 [] execVM "onPlayerRespawn.sqf";
 
 [player] joinSilent (createGroup [GRLIB_side_friendly, true]);
-[] spawn {_this call compile preProcessFileLineNumbers "keyhandler.sqf"};
-call compileFinal preprocessFileLineNumbers "scripts\client\actions\drag.sqf";
+
+[] spawn {_this call compile preProcessFileLineNumbers "scripts\bmr\keyhandler.sqf"};
+[] spawn {_this call compile preProcessFileLineNumbers "scripts\bmr\drag.sqf"};
+

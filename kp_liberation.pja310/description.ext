@@ -7,13 +7,13 @@ enableDebugConsole = 1;
 allowFunctionsLog = 0;
 unsafeCVL = 1;
 
-briefingName = $STR_MISSION_TITLE;
-overviewText = "www.killahpotatoes.de";
-overviewPicture = "res\lib.paa";
+briefingName = KP Liberation [=BMR= Edit];
+overviewText = "bmr-squad.com";
+overviewPicture = "res\bmr.jpg";
 author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
-onLoadName = $STR_MISSION_TITLE;
-onLoadMission = "www.killahpotatoes.de";
-loadScreen = "res\lib.paa";
+onLoadName = KP Liberation [=BMR= Edit];
+onLoadMission = "bmr-squad.com";
+loadScreen = "res\bmr.jpg";
 
 joinUnassigned = 1;
 
@@ -46,7 +46,6 @@ class CfgDebriefing
 };
 
 class CfgFunctions {
-    // If you already have this class opened in your description.ext, copy and paste just this include inside of it.
     #include "KPCF\KPCF_functions.hpp"
 	#include "scripts\bmr\GOM\functions\GOM_fnc_functions.hpp"
 	#include "scripts\bmr\AIS\cfgFunctions.hpp"

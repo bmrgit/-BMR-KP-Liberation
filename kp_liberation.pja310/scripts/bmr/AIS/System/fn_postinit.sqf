@@ -39,6 +39,7 @@ _action = [
 	"<t color='#E9FDF7'>%1</t><br/><img size='2.5' color='#f0ff0000' image='\a3\ui_f\data\IGUI\Cfg\Actions\bandage_ca.paa'/>"
 ] call AIS_Core_fnc_addAction;
 
+
 [
 	"Drag",
 	player,
@@ -64,7 +65,6 @@ _action = [
 	"<t color='#E9FDF7'>%1</t><br/><img size='2.5' color='#f0bfbfbf' image='\a3\ui_f\data\IGUI\Cfg\Actions\take_ca.paa'/>"
 ] call AIS_Core_fnc_addAction;
 */
-
 [
 	"Release",
 	player,

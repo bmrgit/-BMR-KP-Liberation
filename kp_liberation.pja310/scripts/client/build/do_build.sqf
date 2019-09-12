@@ -48,7 +48,7 @@ while { true } do {
 		if ( manned ) then {
 			_grp = createGroup GRLIB_side_friendly;
 		};
-		_classname createUnit [_pos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]", 0.5, "private"];
+		_classname createUnit [_pos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]; [this] call AIS_System_fnc_loadAIS;", 0.5, "private"];
 		build_confirmed = 0;
 	} else {
 		if ( buildtype == 8 ) then {
@@ -61,9 +61,9 @@ while { true } do {
 				if(_idx == 0) then { _unitrank = "sergeant"; };
 				if(_idx == 1) then { _unitrank = "corporal"; };
 				if (_classname isEqualTo blufor_squad_para) then {
-					_x createUnit [_pos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]; removeBackpackGlobal this; this addBackpackGlobal ""B_parachute""", 0.5, _unitrank];
+				_x createUnit [_pos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]; removeBackpackGlobal this; this addBackpackGlobal ""B_parachute""; [this] call AIS_System_fnc_loadAIS;", 0.5, _unitrank];
 				} else {
-					_x createUnit [_pos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}];", 0.5, _unitrank];
+				_x createUnit [_pos, _grp,"this addMPEventHandler [""MPKilled"", {_this spawn kill_manager}]; [this] call AIS_System_fnc_loadAIS;", 0.5, _unitrank];
 				};
 				_idx = _idx + 1;
 
@@ -325,7 +325,7 @@ while { true } do {
 				if ( (unitIsUAV _vehicle) || manned ) then {
 					[ _vehicle ] call F_forceBluforCrew;
 				};
-				
+
                 [_vehicle] call F_addObjectInit;
 
 				sleep 0.3;
@@ -339,7 +339,6 @@ while { true } do {
 					case "B_Slingload_01_Ammo_F": { [_vehicle,10000] spawn GOM_fnc_setAmmoCargo; };
 					default {};
 				};
-				
 
 				if(buildtype == 99) then {
 					_vehicle addEventHandler ["HandleDamage", { 0 }];
