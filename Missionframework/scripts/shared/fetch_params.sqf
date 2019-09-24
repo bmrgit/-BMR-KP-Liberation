@@ -1,7 +1,7 @@
 #include "defines.hpp"
 
 // Check if ACE is running
-if (isClass (configfile >> "CfgPatches" >> "ace_common")) then {KP_liberation_ace = true; diag_log "[KP LIBERATION] ACE detected. Deactivating resupply and weather scripts from Liberation."} else {KP_liberation_ace = false};
+//if (isClass (configfile >> "CfgPatches" >> "ace_common")) then {KP_liberation_ace = true; diag_log "[KP LIBERATION] ACE detected. Deactivating resupply and weather scripts from Liberation."} else {KP_liberation_ace = false};
 
 /* Not saveable params */
 GRLIB_param_wipe_savegame_1 = ["WipeSave1",0] call bis_fnc_getParamValue;
@@ -19,7 +19,7 @@ KP_load_params = ["LoadSaveParams", 1] call BIS_fnc_getParamValue;
 
 if(isServer) then {
     /* Saveable params */
-
+    /*
     // Deactivate BI Revive when ACE Medical is running
     if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then {
         bis_reviveParam_mode = 0; publicVariable "bis_reviveParam_mode";
@@ -27,6 +27,7 @@ if(isServer) then {
     } else {
         GET_PARAM(bis_reviveParam_mode, "ReviveMode", 1);
     };
+    */
 
     GET_PARAM(bis_reviveParam_duration, "ReviveDuration", 6);
     GET_PARAM(bis_reviveParam_requiredTrait, "ReviveRequiredTrait", 1);
