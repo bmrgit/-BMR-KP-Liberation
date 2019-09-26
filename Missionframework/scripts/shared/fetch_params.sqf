@@ -29,6 +29,7 @@ if(isServer) then {
     };
     */
 
+    GET_PARAM(bis_reviveParam_mode, "ReviveMode", 1);
     GET_PARAM(bis_reviveParam_duration, "ReviveDuration", 6);
     GET_PARAM(bis_reviveParam_requiredTrait, "ReviveRequiredTrait", 1);
     GET_PARAM(bis_reviveParam_medicSpeedMultiplier, "ReviveMedicSpeedMultiplier", 1);
