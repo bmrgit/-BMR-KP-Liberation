@@ -16,6 +16,7 @@ CHANGE LOG v 1.01
 -Added Immersion Mod  
 -Added Drag Body script  
 -Added GOM Aircraft Loadout  
+fdgdfgdfgdfg
 -Removed Mobile Arsenal  
 -Increased AI Difficulty  
 -Increased Max number of AI  
